@@ -6,6 +6,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 import category from './category';
 import item from './item';
+import group from './group';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -16,6 +17,7 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     category,
-    item
+    item,
+    group,
   ]),
 })
